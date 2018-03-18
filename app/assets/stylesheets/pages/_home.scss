@@ -1,1 +1,49 @@
-// Specific CSS for your home-page
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: rgb(80,80,80);
+}
+p {
+  font-family: 'Raleway', sans-serif;
+}
+#banner-title {
+  line-height: 20px;
+}
+.custom-container {
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.logo {
+  position: relative;
+  top: 20px;
+}
+.colored-banner {
+  width: 100vw;
+  background: #304352;
+  background: -webkit-linear-gradient(to top, #4c2222, #560000);
+  background: linear-gradient(to top, #4c2222, #560000);
+}
+
+.skills-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.skill {
+  height: 400px;
+}
+#white-font {
+  color: #FFFFFF;
+}
+.contact-info-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-info {
+  width: 30vw;
+}
+#avatar {
+  border-radius: 50%;
+}
