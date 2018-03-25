@@ -5,33 +5,72 @@ h1 {
 }
 p {
   font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+#line-height {
+  line-height: 200%;
 }
 #banner-title {
+  margin-top: 100px;
   line-height: 20px;
 }
-.custom-container {
-  width: 90vw;
-  margin-left: 5vw;
+.normal-weight {
+  font-weight: normal;
 }
-
 .logo {
-  position: relative;
-  top: 20px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 .colored-banner {
-  width: 100vw;
   background: #304352;
-  background: -webkit-linear-gradient(to top, #4c2222, #560000);
-  background: linear-gradient(to top, #4c2222, #560000);
+  background: -webkit-linear-gradient(to top, #436c8c, #263e51);
+  background: linear-gradient(to top, #436c8c, #263e51);
 }
+.banner-para {
+  margin-bottom: 50px;
+}
+.work-img {
+  margin-top: 50px;
+}
+.work-examples {
 
-.skills-banner {
+}
+.work-descriptions {
+  margin-bottom: 50px;
+}
+.responsive-banner {
+  display: flex;
+  flex-direction: column;
+}
+.repsonsive-examples {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.skill {
-  height: 400px;
+.responsive-example {
+  margin: 20px 0;
+  align-items: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.devices {
+  font-size: 250px;
+  position: relative;
+}
+.device-pictures {
+  position: relative;
+  bottom: 230px;
+  z-index: 5;
+}
+.device-pictures-computer {
+  position: relative;
+  bottom: 233px;
+  z-index: 5;
+}
+.mobile-para {
+  margin-top: -150px;
 }
 #white-font {
   color: #FFFFFF;
@@ -41,9 +80,33 @@ p {
   flex-direction: row;
   justify-content: space-around;
 }
-.contact-info {
-  width: 30vw;
+.about-title {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #avatar {
   border-radius: 50%;
+  box-shadow: 1px 1px 1px #436c8c;
 }
+.links {
+  color: #263e51;
+  margin: 10px 50px;
+  font-size: 25px;
+  &:hover {
+    color: #436c8c;
+    text-decoration: none;
+  }
+}
+.voyagr {
+  color: #FDB631;
+  font-weight: bold;
+  &:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+// .bold {
+//   color: #FDB631;
+// }
