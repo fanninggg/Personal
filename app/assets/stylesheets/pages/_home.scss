@@ -160,7 +160,7 @@ ul {
 }
 #avatar {
   border-radius: 50%;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
 }
 .work-individual {
   margin-bottom: 15px;
@@ -201,5 +201,9 @@ ul {
   .navbar-wagon-item {
     cursor: pointer;
     padding: 0 5px;
+  }
+  #resume {
+    width: 270px;
+    height: 382px;
   }
 }
