@@ -1,27 +1,53 @@
 h1 {
   font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
-  color: rgb(80,80,80);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #225277;
+}
+
+h1:after, h1:before {
+  content: '';
+  width: 75px;
+  height: 2px;
+  background: #225277;
+  margin: 0 10px;
 }
 p {
   font-family: 'Raleway', sans-serif;
 }
-/* Main navbar */
+ul {
+  padding: 0;
+  margin: 0;
+}
+#navbar-text {
+  color: rgb(255,255,255);
+  font-size: 16px;
+}
 .navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
-  transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
+  padding: 20px 0px;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  background: transparent;
+  width: 100vw;
+  box-shadow: none;
+  -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+.navbar-flex {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
 }
 /* Right section */
 .navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
 
 /* Basic navbar item */
@@ -65,15 +91,29 @@ p {
   position: absolute;
   right: 10px;
   top: -6px;
-  background-color: white;
+  background-color: rgb(255,255,255);
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+.navbar-wagon.scrolled {
+    background: rgb(68, 68, 68); /* IE */
+    background: rgba(0, 0, 0, 0.78); /* NON-IE */
+}
+.top {
+  height: 1px;
+  width: 30%;
+  align-items: center;
+  color: rgb(255,255,255);
+  background-color: rgb(255,255,255);
+  border: none;
+  opacity: 0.6;
+}
 .banner {
-  color: white;
+  color: rgb(255,255,255);
   text-align: center;
-  height: calc(100vh - 70px);
+  height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
@@ -81,16 +121,18 @@ p {
   justify-content: center;
   background-position: center bottom;
 }
-.banner h1 {
+.banner h2 {
   font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  color: rgb(255,255,255);
+  margin-bottom: 25px;
 }
 .banner p {
   font-size: 25px;
   margin-bottom: 30px;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: rgb(80,80,80);
+  color: rgb(255,255,255);
 }
 #line-height {
   line-height: 200%;
@@ -101,22 +143,6 @@ p {
 }
 .normal-weight {
   font-weight: normal;
-}
-.logo {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-}
-.colored-banner {
-  background: #304352;
-  background: -webkit-linear-gradient(to top, #436c8c, #263e51);
-  background: linear-gradient(to top, #436c8c, #263e51);
-}
-.banner-para {
-  margin-bottom: 50px;
-}
-.work-descriptions {
-  margin-bottom: 50px;
 }
 #white-font {
   color: #FFFFFF;
@@ -134,24 +160,46 @@ p {
 }
 #avatar {
   border-radius: 50%;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+.work-individual {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.voyagr {
+  color: #225277;
+  font-weight: bold;
+  &:hover {
+    color: #102f47;
+    text-decoration: none;
+  }
+}
+.work-image-center {
+  align-items: center;
 }
 .links {
-  color: #263e51;
+  color: #225277;
   margin: 10px 50px;
   font-size: 25px;
   &:hover {
-    color: #436c8c;
+    color: #102f47;
     text-decoration: none;
   }
 }
-.voyagr {
-  color: #FDB631;
-  font-weight: bold;
-  &:hover {
-    color: #FFFFFF;
-    text-decoration: none;
+
+@media only screen and (max-width: 600px) {
+  .top {
+    width: 80%;
+  }
+  #avatar {
+    width: 75px;
+    height: 75px;
+  }
+  h1:after, h1:before {
+    width: 10px;
+  }
+  .navbar-wagon-item {
+    cursor: pointer;
+    padding: 0 5px;
   }
 }
-// .bold {
-//   color: #FDB631;
-// }

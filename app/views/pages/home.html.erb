@@ -1,88 +1,82 @@
-<div class="navbar-wagon">
-
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <a href="#previous-work" class="navbar-wagon-item navbar-wagon-link">Previous Work</a>
-    <a href="#philosophy" class="navbar-wagon-item navbar-wagon-link">Guiding Philosophy</a>
-    <a href="#about-me" class="navbar-wagon-item navbar-wagon-link">About Me</a>
-  </div>
-
-  <!-- Dropdown appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#previous-work">Previous Work</a></li>
-        <li><a href="#philosophy">Guiding Philosophy</a></li>
-        <li><a href="#about-me">About Me</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="banner" style="background-image: url('https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99cab5f446a82f1261c766567992fe1e&auto=format&fit=crop&w=2850&q=80');">
-  <div class="banner-content">
-    <h1 id="banner-title">Ben Fanning</h1>
-    <p>---- Full-stack Developer ----</p>
-  </div>
-</div>
-
-<div id="previous-work" class="row">
-  <div class="work-banner">
-    <h1 class="text-center">Previous Work</h1>
-    <%= image_tag "Voyagr-logo", height: 51, width: 215, class: "work-img" %>
-    <br>
-    <div class="work-descriptions">
-      <div class="">
-        <p>Voyagr is a facebook chatbot developed in just two weeks to showcase skills acquired at Le Wagon's coding bootcamp. It provides tailored travel suggestions based on the answers a user gives to a facebook quiz, alongside a couple of other features.</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=99cab5f446a82f1261c766567992fe1e&auto=format&fit=crop&w=2850&q=80');">
+  <div class="navbar-wagon">
+    <div class="navbar-flex">
+      <div class="navbar-wagon-right">
+        <ul>
+        <a id="navbar-text" href="#about-me" class="navbar-wagon-item navbar-wagon-link">About Me</a>
+        <a id="navbar-text" href="#previous-work" class="navbar-wagon-item navbar-wagon-link">My Work</a>
+        <a id="navbar-text" href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact Me</a>
+        </ul>
       </div>
+      <hr class="top">
     </div>
+  </div>
+  <div class="banner-content">
+    <h2 id="banner-title">Ben Fanning</h2>
+    <p>Full-stack//Front-end Developer</p>
   </div>
 </div>
 <br>
 <br>
 <br>
 <br>
-<div id="philosophy"class="container">
-  <h1 class="text-center">Mobile first design</h1>
-  <p>Since late <%= link_to "2016", "http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide", target: "_blank", class: "voyagr" %>, worldwide mobile and tablet internet usage has exceeded desktop usage. This means that websites designed without mobile and tablet users in mind will be excluding over half of their potential audience. As such, my goal is to provide for this preponderant group first, ensuring that there is no loss of functionality or design as a result of varied device usage.</p>
-</div>
 
-<div id="about-me" class="about-banner colored-banner">
+<div id="about-me" class="about-banner">
   <div class="container">
     <div class="about-title text-center">
       <%= image_tag "Ben", width: 150, height: 150, id: "avatar" %>
       <div class="title-and-cv">
-        <h1 id="white-font">About Me</h1>
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Résumé</button>
+        <h1>About Me</h1>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Résumé</button>
       </div>
       <%= image_tag "Ski", width: 150, height: 150, id: "avatar" %>
     </div>
-    <div class="about-info about-info-text" id="white-font">
-      <p id="line-height">I am a 23 year old full-stack <b class="bold">developer</b> with a passion for <b class="bold">front-end design</b>. I'm passionate about making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.
-      <br>
-      <br>
-      I grew up in Surrey and lived there for the first 18 years of my life before moving to Plymouth to study Politics and International Relations for 3 years. Post graduation I travelled to the Canadian Rockies where I lived for a couple of years working as a ski Instructor at Mt. Norquay in Banff (pictured).
-      <br>
-      <br>
-      I decided to move back to London in 2017 in order to pursue a career in tech. Having started to teach myself <b class="bold">Ruby</b> and <b class="bold">Javascript</b> with some online courses I took the decision to accelerate my learning and joined Le Wagon's intensive nine-week coding bootcamp. During the course of this programme my team designed <%= link_to "voyagr.co.uk", "https://www.voyagr.co.uk/", target: "_blank", class: "voyagr" %>, a facebook chatbot which provides personalised travel suggestions, this gave me valuable experience designing mobile first web pages.
-      <br>
-      <br>
-      Following the bootcamp I was asked to return as a teaching assistant for the next batch of students, this has allowed me to consolidate my knowledge as well as providing me with the opportunity of <b class="bold">debugging</b> code written in a variety of different styles. I currently do freelance work alongside my teaching responsibilities, if you are interested in having me build a website for you, please click on one the media links below, cheers.
-      <br>
-      <br>
-      Away from tech, my main passions include skiing/snowboarding, sailing, skating and struggling to surf.</p>
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="about-info about-info-text">
+          <p id="line-height">I am a 23 year old full-stack developer with a passion for front-end design. I'm passionate about making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.
+          <br>
+          <br>
+          I grew up in Surrey and lived there for the first 18 years of my life before moving to Plymouth to study Politics and International Relations for 3 years. Post graduation I travelled to the Canadian Rockies where I lived for a couple of years working as a ski Instructor at Mt. Norquay in Banff (pictured).
+          <br>
+          <br>
+          I decided to move back to London in 2017 in order to pursue a career in tech. Having started to teach myself Ruby and Javascript with some online courses I took the decision to accelerate my learning and joined Le Wagon's intensive nine-week coding bootcamp. During the course of this programme my team designed <%= link_to "voyagr.co.uk", "https://www.voyagr.co.uk/", target: "_blank", class: "voyagr" %>, a facebook chatbot which provides personalised travel inspiration, this gave me valuable experience designing mobile first web pages.
+          <br>
+          <br>
+          Following the bootcamp I was asked to return as a teaching assistant for the next batch of students, this has allowed me to consolidate my existing knowledge as well as providing me with the opportunity of debugging code written in a variety of different styles.
+          <br>
+          <br>
+          Away from tech, my main passions include skiing/snowboarding, sailing, skating and struggling to surf.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="footer">
-  <div class="text-center contact-info contact-links">
-    <%= link_to "", "https://www.linkedin.com/in/ben-fanning-28523315b/", target: "_blank", class: "links fab fa-linkedin" %>
-    <%= link_to "", "https://github.com/fanninggg", target: "_blank", class: "links fab fa-github" %>
-    <%= link_to "", "https://www.facebook.com/fanninggg", target: "_blank", class: "links fab fa-facebook-f" %>
-    <%= link_to "", "mailto:ben@voyagr.co.uk", target: "_blank", class: "links far fa-envelope" %>
+<div id="previous-work" class="container">
+  <div class="row">
+    <h1 class="text-center">My Work</h1>
+    <div class="col-xs-12 col-md-10 col-md-offset-1 work-individual">
+      <%= image_tag "Voyagr-logo", height: 25.5, width: 107.5, class: "work-image-center" %>
+      <p id="line-height">Since late <%= link_to "2016", "http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide", target: "_blank", class: "voyagr" %> worldwide mobile and tablet internet usage has exceeded desktop usage. This means that websites designed without mobile and tablet users in mind will be excluding over half of their potential audience. As such, I wanted to work on a project which would provide for this preponderant group first, in order to develop my mobile-first skillset. Voyagr is a facebook chatbot and associated rails app developed in just two weeks to showcase skills acquired at Le Wagon's coding bootcamp. It provides tailored travel inspiration based on the answers a user gives to a facebook quiz, alongside a couple of other features. </p>
+    </div>
+    <div class="col-xs-12 col-md-10 col-md-offset-1 work-individual">
+      <%= image_tag "Le Wagon", height: 45, width: 107.5, class: "work-image-center" %>
+      <p id="line-height">I am currently working as a teaching assistant at Le Wagon London. We are proud to be ranked as the #1 coding bootcamp in the world according to <%= link_to "SwitchUp", "https://www.switchup.org/research/best-coding-bootcamps", target: "_blank", class: "voyagr" %> and <%= link_to "Coursereport", "https://www.coursereport.com/schools/le-wagon", target: "_blank", class: "voyagr" %>. We offer an intensive nine week program which teaches Ruby/Rails, Javascript/JQuery, HTML/CSS, SQL and a whole host of other tools. To see my current work on React and Redux check out my github profile. </p>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-10 col-md-offset-1 text-center contact-info contact-links">
+      <h1>Interested?</h1>
+      <p id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. Cheers! </p>
+      <%= link_to "", "https://www.linkedin.com/in/ben-fanning-28523315b/", target: "_blank", class: "links fab fa-linkedin" %>
+      <%= link_to "", "https://github.com/fanninggg", target: "_blank", class: "links fab fa-github" %>
+      <%= link_to "", "https://www.facebook.com/fanninggg", target: "_blank", class: "links fab fa-facebook-f" %>
+      <%= link_to "", "mailto:ben@voyagr.co.uk", class: "links far fa-envelope" %>
+    </div>
   </div>
 </div>
 
@@ -92,31 +86,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center">Ben Fanning - Résumé</h4>
+        <h4 class="modal-title text-center">Résumé</h4>
       </div>
       <div class="modal-body">
-        <p><b>Education</b></p>
-          <p class="normal-weight">University of Plymouth, Devon, United Kingdom, 2012-2015</p>
-          <p>2:1 in International Relations and Politics. BSc.</p>
-          <br>
-          <p class="normal-weight">St George’s College, Weybridge, Surrey, United Kingdom.</p>
-          <p><em>A Level:</em></p>
-          <p>Politics - A</p>
-          <p>Geography - B</p>
-          <p>History - B</p>
-          <br>
-          <p><em>AS Level:</em></p>
-          <p>Critical thinking - A*</p>
-          <br>
-          <p><b>Work Experience</b></p>
-          <p class="normal-weight">Fastgardener. Front-End Developer. London. UK. 2018 - present.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis at, ullam dolore quaerat earum doloribus sint commodi, porro voluptatem blanditiis ducimus explicabo natus fugit modi aliquid, maiores asperiores numquam deleniti.</p>
-          <p class="normal-weight">Le Wagon Coding Bootcamp. Teaching Assistant. London. UK. 2018 - present.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni enim expedita excepturi ullam et fugit! Nobis animi fugiat ducimus esse cumque labore dignissimos ipsam, reprehenderit, odio optio corporis, officiis consequuntur!</p>
-          <p class="normal-weight">Mount Norquay Ski Resort. Ski Instructor/Weekend Supervisor. Banff. Alberta. Canada. 2015 - 2017.</p>
-          <p>As an instructor I learned the joy of teaching a skill to others and the responsibility which comes with acting in loco parentis. Further, supervising 10 of my fellow instructors, each of whom was responsible for up to 8 young children was a privilege which enabled me to greatly develop my management and leadership qualities.</p>
-          <br>
-        </p>
+        <%= image_tag "BenFanning", height: 1223, width:865 %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
