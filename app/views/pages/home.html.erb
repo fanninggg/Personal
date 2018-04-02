@@ -16,6 +16,7 @@
     <p>Full-stack//Front-end Developer</p>
   </div>
 </div>
+
 <br>
 <br>
 <br>
@@ -23,31 +24,43 @@
 
 <div id="about-me" class="about-banner">
   <div class="container">
+
     <div class="about-title text-center">
-      <%= image_tag "Ben", width: 150, height: 150, id: "avatar" %>
       <div class="title-and-cv">
         <h1>About Me</h1>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Résumé</button>
       </div>
-      <%= image_tag "Ski", width: 150, height: 150, id: "avatar" %>
     </div>
+
     <div class="row">
-      <div class="col-xs-12 col-md-10 col-md-offset-1">
-        <div class="about-info about-info-text">
-          <p id="line-height">I am a 23 year old full-stack developer with a passion for front-end design. I'm passionate about making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.
-          <br>
-          <br>
-          I grew up in Surrey and lived there for the first 18 years of my life before moving to Plymouth to study Politics and International Relations for 3 years. Post graduation I travelled to the Canadian Rockies where I lived for a couple of years working as a ski Instructor at Mt. Norquay in Banff (pictured).
-          <br>
-          <br>
-          I decided to move back to London in 2017 in order to pursue a career in tech. Having started to teach myself Ruby and Javascript with some online courses I took the decision to accelerate my learning and joined Le Wagon's intensive nine-week coding bootcamp. During the course of this programme my team designed <%= link_to "voyagr.co.uk", "https://www.voyagr.co.uk/", target: "_blank", class: "voyagr" %>, a facebook chatbot which provides personalised travel inspiration, this gave me valuable experience designing mobile first web pages.
-          <br>
-          <br>
-          Following the bootcamp I was asked to return as a teaching assistant for the next batch of students, this has allowed me to consolidate my existing knowledge as well as providing me with the opportunity of debugging code written in a variety of different styles.
-          <br>
-          <br>
-          Away from tech, my main passions include skiing/snowboarding, sailing, skating and struggling to surf.</p>
-        </div>
+      <div class="text-center col-xs-12 col-md-12">
+        <p id="line-height">I am a 23 year old full-stack developer with a passion for front-end design. I'm passionate about making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center col-xs-12 col-md-9">
+        <p id="line-height">I grew up in Surrey and lived there for the first 18 years of my life before moving to Plymouth to study Politics and International Relations for 3 years. Post graduation I travelled to the Canadian Rockies where I lived for a couple of years working as a ski Instructor at Mt. Norquay in Banff.</p>
+      </div>
+      <div class="col-md-3"><%= image_tag "Ski", width: 150, height: 150, id: "avatar" %></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><%= image_tag "wagon-logo", width: 150, height: 150, id: "avatar" %></div>
+      <div class="text-center col-xs-12 col-md-9">
+        <p id="line-height">I decided to move back to London in 2017 in order to pursue a career in tech. Having started to teach myself Ruby and Javascript with some online courses I took the decision to accelerate my learning and joined Le Wagon's intensive nine-week coding bootcamp. During the course of this programme my team designed <%= link_to "voyagr.co.uk", "https://www.voyagr.co.uk/", target: "_blank", class: "voyagr" %>, a facebook chatbot which provides personalised travel inspiration, this gave me valuable experience designing mobile first web pages.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center col-xs-12 col-md-9">
+        <p id="line-height">Following the bootcamp I was asked to return as a teaching assistant for the next batch of students, this has allowed me to consolidate my existing knowledge as well as providing me with the opportunity of debugging code written in a variety of different styles.</p>
+      </div>
+      <div class="col-md-3"><%= image_tag "Ben", width: 150, height: 150, id: "avatar" %></div>
+    </div>
+
+      <div class="text-center col-xs-12 col-md-12">
+        <p id="line-height">Away from tech, my main passions include skiing/snowboarding, sailing, skating and struggling to surf.</p>
       </div>
     </div>
   </div>
