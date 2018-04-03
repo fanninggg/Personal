@@ -96,11 +96,6 @@ ul {
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
-
-.navbar-wagon.scrolled {
-    background: rgb(68, 68, 68); /* IE */
-    background: rgba(0, 0, 0, 0.78); /* NON-IE */
-}
 .top {
   height: 1px;
   width: 30%;
@@ -162,6 +157,28 @@ ul {
   border-radius: 50%;
   box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
 }
+.row-spacer {
+  margin: 100px 0;
+}
+.centered-text {
+  height: 200px;
+  vertical-align: middle;
+}
+.flex-test {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-text-left {
+  width: 50%;
+  padding: 0 10px;
+  border-left: 6px solid #225277;
+}
+.about-text-right {
+  width: 50%;
+  padding: 0 10px;
+  border-right: 6px solid #225277;
+}
 .work-individual {
   margin-bottom: 15px;
   margin-top: 15px;
@@ -192,7 +209,7 @@ ul {
     width: 80%;
   }
   #avatar {
-    display: hidden;
+    visibility: hidden;
   }
   h1:after, h1:before {
     width: 10px;
