@@ -6,7 +6,14 @@ h1 {
   font-size: 24px;
   color: #225277;
 }
-
+h2 {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #FFFFFF;
+}
 h1:after, h1:before {
   content: '';
   width: 75px;
@@ -14,8 +21,18 @@ h1:after, h1:before {
   background: #225277;
   margin: 0 10px;
 }
+h2:after, h2:before {
+  content: '';
+  width: 75px;
+  height: 2px;
+  background: #FFFFFF;
+  margin: 0 10px;
+}
 p {
   font-family: 'Raleway', sans-serif;
+}
+.light-font {
+  font-weight: lighter;
 }
 ul {
   padding: 0;
@@ -131,6 +148,7 @@ ul {
 }
 #line-height {
   line-height: 200%;
+  margin-bottom: 0;
 }
 #banner-title {
   margin-top: 100px;
@@ -194,6 +212,10 @@ ul {
 .work-image-center {
   align-items: center;
 }
+.link-holder {
+  display: flex;
+  justify-content: space-around;
+}
 .links {
   color: #225277;
   margin: 10px 50px;
@@ -202,6 +224,25 @@ ul {
     color: #102f47;
     text-decoration: none;
   }
+}
+.white-banner {
+  padding: 50px 0;
+}
+.colored-banner {
+  padding: 50px 0;
+  background: rgb(34,82,119);
+  background: linear-gradient(119deg, rgba(34,82,119,1) 0%, rgba(34,82,119,0.9304096638655462) 100%);
+}
+.skill-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.gauge {
+  margin-bottom: 50px;
+}
+#gauge-label {
+  margin-top: -20px;
 }
 
 @media only screen and (max-width: 600px) {
