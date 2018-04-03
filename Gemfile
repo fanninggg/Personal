@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'bootsnap', require: false
+gem 'bootstrap'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

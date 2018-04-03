@@ -4,6 +4,7 @@
       <div class="navbar-wagon-right">
         <ul>
         <a id="navbar-text" href="#about-me" class="navbar-wagon-item navbar-wagon-link">About Me</a>
+        <a id="navbar-text" href="#my-skills" class="navbar-wagon-item navbar-wagon-link">My Skills</a>
         <a id="navbar-text" href="#previous-work" class="navbar-wagon-item navbar-wagon-link">My Work</a>
         <a id="navbar-text" href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact Me</a>
         </ul>
@@ -16,25 +17,19 @@
     <p id="app"></p>
   </div>
 </div>
-
-<br>
-<br>
-<br>
-<br>
-
-<div id="about-me" class="about-banner">
+<div id="about-me" class="white-banner">
   <div class="container">
 
     <div class="about-title text-center">
       <div class="title-and-cv">
         <h1>About Me</h1>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Résumé</button>
       </div>
     </div>
 
     <div class="row">
       <div class="text-center col-xs-12 col-sm-10 col-sm-offset-1">
-        <p id="line-height">I am a 23 year old full-stack developer with a passion for front-end design. I'm enthusiastic about making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.</p>
+        <p id="line-height">I am a 23 year old full-stack developer with a passion for front-end design. I'm obsessed with making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.</p>
       </div>
     </div>
 
@@ -70,35 +65,80 @@
   </div>
 </div>
 
-<div id="previous-work" class="container">
-  <div class="row">
-    <h1 class="text-center">My Work</h1>
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
-      <%= image_tag "Voyagr-logo", height: 25.5, width: 107.5, class: "work-image-center" %>
-      <p id="line-height">Since late <%= link_to "2016", "http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide", target: "_blank", class: "voyagr" %> worldwide mobile and tablet internet usage has exceeded desktop usage. This means that websites designed without mobile and tablet users in mind will be excluding over half of their potential audience. As such, I wanted to work on a project which would provide for this preponderant group first, in order to develop my mobile-first skillset. Voyagr is a facebook chatbot and associated rails app developed in just two weeks to showcase skills acquired at Le Wagon's coding bootcamp. It provides tailored travel inspiration based on the answers a user gives to a facebook quiz, alongside a couple of other features. </p>
+<div id="my-skills" class="colored-banner">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">My Skills</h2>
     </div>
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
-      <%= image_tag "Le Wagon", height: 45, width: 107.5, class: "work-image-center" %>
-      <p id="line-height">I am currently working as a teaching assistant at Le Wagon London. We are proud to be ranked as the #1 coding bootcamp in the world according to <%= link_to "SwitchUp", "https://www.switchup.org/research/best-coding-bootcamps", target: "_blank", class: "voyagr" %> and <%= link_to "Coursereport", "https://www.coursereport.com/schools/le-wagon", target: "_blank", class: "voyagr" %>. We offer an intensive nine week program which teaches Ruby/Rails, Javascript/JQuery, HTML/CSS, SQL and a whole host of other tools. To see my current work on React and Redux check out my github profile. </p>
+    <div id="white-font" class="skill-flex">
+      <div class="gauge">
+        <canvas width="200" height="200" id="UI/UX"></canvas>
+        <div class="text-center" id="gauge-label" style="font-size: 15px;">UI/UX</div>
+      </div>
+      <div class="gauge">
+        <canvas width="200" height="200" id="Ruby"></canvas>
+        <div class="text-center" id="gauge-label" style="font-size: 15px;">Ruby</div>
+      </div>
+      <div class="gauge">
+        <canvas width="200" height="200" id="Javascript"></canvas>
+        <div class="text-center" id="gauge-label" style="font-size: 15px;">Javascript</div>
+      </div>
+    </div>
+    <div id="white-font" class="skill-flex">
+      <div class="gauge">
+        <canvas width="200" height="200" id="Rails"></canvas>
+        <div class="text-center" id="gauge-label" style="font-size: 15px;">Rails</div>
+      </div>
+      <div class="gauge">
+        <canvas width="200" height="200" id="HTML/CSS"></canvas>
+        <div class="text-center" id="gauge-label" style="font-size: 15px;">HTML/CSS</div>
+      </div>
+      <div class="gauge">
+        <canvas width="200" height="200" id="React/Redux"></canvas>
+        <div class="text-center" id="gauge-label" style="font-size: 15px;">React/Redux</div>
+      </div>
     </div>
   </div>
 </div>
 
-<div id="contact" class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center contact-info contact-links">
-      <h1>Interested?</h1>
-      <p id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
-      <%= link_to "", "https://www.linkedin.com/in/ben-fanning-28523315b/", target: "_blank", class: "links fab fa-linkedin" %>
-      <%= link_to "", "https://github.com/fanninggg", target: "_blank", class: "links fab fa-github" %>
-      <%= link_to "", "https://www.facebook.com/fanninggg", target: "_blank", class: "links fab fa-facebook-f" %>
-      <%= link_to "", "mailto:ben@voyagr.co.uk", class: "links far fa-envelope" %>
+<div id="previous-work" class="white-banner">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">My Work</h1>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
+        <%= image_tag "Voyagr-logo", height: 25.5, width: 107.5, class: "work-image-center" %>
+        <p id="line-height">Since late <%= link_to "2016", "http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide", target: "_blank", class: "voyagr" %> worldwide mobile and tablet internet usage has exceeded desktop usage. This means that websites designed without mobile and tablet users in mind will be excluding over half of their potential audience. As such, I wanted to work on a project which would provide for this preponderant group first, in order to develop my mobile-first skillset. Voyagr is a facebook chatbot and associated rails app developed in just two weeks to showcase skills acquired at Le Wagon's coding bootcamp. It provides tailored travel inspiration based on the answers a user gives to a facebook quiz, alongside a couple of other features. </p>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
+        <%= image_tag "Le Wagon", height: 45, width: 107.5, class: "work-image-center" %>
+        <p id="line-height">I am currently working as a teaching assistant at Le Wagon London. We are proud to be ranked as the #1 coding bootcamp in the world according to <%= link_to "SwitchUp", "https://www.switchup.org/research/best-coding-bootcamps", target: "_blank", class: "voyagr" %> and <%= link_to "Coursereport", "https://www.coursereport.com/schools/le-wagon", target: "_blank", class: "voyagr" %>. We offer an intensive nine week program which teaches Ruby/Rails, Javascript/JQuery, HTML/CSS, SQL and a whole host of other tools. To see my current work on React and Redux check out my github profile. </p>
+      </div>
     </div>
+  </div>
+</div>
+
+<div id="contact" class="colored-banner">
+  <div class="container">
+    <div class="row">
+      <div id="white-font" class="col-xs-12 col-sm-10 col-sm-offset-1 text-center contact-info contact-links">
+        <h2>Interested?</h2>
+        <p class="light-font" id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="link-holder">
+    <%= link_to "", "https://www.linkedin.com/in/ben-fanning-28523315b/", target: "_blank", class: "links fab fa-linkedin" %>
+    <%= link_to "", "https://github.com/fanninggg", target: "_blank", class: "links fab fa-github" %>
+    <%= link_to "", "https://www.facebook.com/fanninggg", target: "_blank", class: "links fab fa-facebook-f" %>
+    <%= link_to "", "mailto:ben@voyagr.co.uk", class: "links far fa-envelope" %>
   </div>
 </div>
 
 <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -131,7 +171,158 @@ typewriter.typeString('Full Stack Developer')
     .typeString('Front End Developer')
     .pauseFor(500)
     .deleteAll()
-    .typeString('Snow Lover')
+    .typeString('Powderhound')
     .pauseFor(500)
     .start();
+</script>
+
+<script>
+var opts = {
+  angle: -0.30, // The span of the gauge arc
+  lineWidth: 0.07, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0, // // Relative to gauge radius
+    strokeWidth: 0, // The thickness
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#FFFFFF',    // just experiment with them
+  strokeColor: '#225277',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+
+  };
+  var target = document.getElementById('UI/UX'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(90); // set actual value
+</script>
+<script>
+var opts = {
+  angle: -0.30, // The span of the gauge arc
+  lineWidth: 0.07, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0, // // Relative to gauge radius
+    strokeWidth: 0, // The thickness
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#FFFFFF',    // just experiment with them
+  strokeColor: '#225277',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+
+  };
+  var target = document.getElementById('Ruby'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(70); // set actual value
+</script>
+<script>
+var opts = {
+  angle: -0.30, // The span of the gauge arc
+  lineWidth: 0.07, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0, // // Relative to gauge radius
+    strokeWidth: 0, // The thickness
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#FFFFFF',    // just experiment with them
+  strokeColor: '#225277',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+
+  };
+  var target = document.getElementById('Javascript'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(50); // set actual value
+</script>
+<script>
+var opts = {
+  angle: -0.30, // The span of the gauge arc
+  lineWidth: 0.07, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0, // // Relative to gauge radius
+    strokeWidth: 0, // The thickness
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#FFFFFF',    // just experiment with them
+  strokeColor: '#225277',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+
+  };
+  var target = document.getElementById('Rails'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(70); // set actual value
+</script>
+<script>
+var opts = {
+  angle: -0.30, // The span of the gauge arc
+  lineWidth: 0.07, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0, // // Relative to gauge radius
+    strokeWidth: 0, // The thickness
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#FFFFFF',    // just experiment with them
+  strokeColor: '#225277',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+
+  };
+  var target = document.getElementById('HTML/CSS'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(90); // set actual value
+</script>
+<script>
+var opts = {
+  angle: -0.30, // The span of the gauge arc
+  lineWidth: 0.07, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0, // // Relative to gauge radius
+    strokeWidth: 0, // The thickness
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#FFFFFF',    // just experiment with them
+  strokeColor: '#225277',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+
+  };
+  var target = document.getElementById('React/Redux'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(20); // set actual value
 </script>
