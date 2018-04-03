@@ -13,7 +13,7 @@
   </div>
   <div class="banner-content">
     <h2 id="banner-title">Ben Fanning</h2>
-    <p>Full-stack//Front-end Developer</p>
+    <p id="app"></p>
   </div>
 </div>
 
@@ -28,39 +28,43 @@
     <div class="about-title text-center">
       <div class="title-and-cv">
         <h1>About Me</h1>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Résumé</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
       </div>
     </div>
 
     <div class="row">
-      <div class="text-center col-xs-12 col-md-12">
-        <p id="line-height">I am a 23 year old full-stack developer with a passion for front-end design. I'm passionate about making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.</p>
+      <div class="text-center col-xs-12 col-sm-10 col-sm-offset-1">
+        <p id="line-height">I am a 23 year old full-stack developer with a passion for front-end design. I'm enthusiastic about making a site look as clean as possible and everything that goes along with that. Back when I was teaching skiing I used to claim that "if it looks good, it is good" and I maintain that mantra for web development.</p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="text-center col-xs-12 col-md-9">
+    <div class="row row-spacer flex-test">
+      <div class="about-text-left">
         <p id="line-height">I grew up in Surrey and lived there for the first 18 years of my life before moving to Plymouth to study Politics and International Relations for 3 years. Post graduation I travelled to the Canadian Rockies where I lived for a couple of years working as a ski Instructor at Mt. Norquay in Banff.</p>
       </div>
-      <div class="col-md-3"><%= image_tag "Ski", width: 150, height: 150, id: "avatar" %></div>
+      <div data-aos="fade-right" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000" text-center"><%= image_tag "Ski", width: 200, height: 200, id:"avatar" %>
+      </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-3"><%= image_tag "wagon-logo", width: 150, height: 150, id: "avatar" %></div>
-      <div class="text-center col-xs-12 col-md-9">
+    <div class="row row-spacer flex-test">
+      <div data-aos="fade-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000" class="text-center"><%= image_tag "wagon-logo", width: 200, height: 200, id: "avatar" %></div>
+      <div class="about-text-right">
         <p id="line-height">I decided to move back to London in 2017 in order to pursue a career in tech. Having started to teach myself Ruby and Javascript with some online courses I took the decision to accelerate my learning and joined Le Wagon's intensive nine-week coding bootcamp. During the course of this programme my team designed <%= link_to "voyagr.co.uk", "https://www.voyagr.co.uk/", target: "_blank", class: "voyagr" %>, a facebook chatbot which provides personalised travel inspiration, this gave me valuable experience designing mobile first web pages.</p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="text-center col-xs-12 col-md-9">
+    <div class="row row-spacer flex-test">
+      <div class="about-text-left">
         <p id="line-height">Following the bootcamp I was asked to return as a teaching assistant for the next batch of students, this has allowed me to consolidate my existing knowledge as well as providing me with the opportunity of debugging code written in a variety of different styles.</p>
       </div>
-      <div class="col-md-3"><%= image_tag "Ben", width: 150, height: 150, id: "avatar" %></div>
+      <div data-aos="fade-right" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000" class="text-center"><%= image_tag "Ben", width: 200, height: 200, id: "avatar" %></div>
     </div>
 
-      <div class="text-center col-xs-12 col-md-12">
-        <p id="line-height">Away from tech, my main passions include skiing/snowboarding, sailing, skating and struggling to surf.</p>
+      <div class="text-center col-xs-12 col-sm-10 col-sm-offset-1">
+        <p id="line-height">Away from tech, my main passions are skiing/snowboarding, sailing, skating and struggling to surf.</p>
       </div>
     </div>
   </div>
@@ -69,11 +73,11 @@
 <div id="previous-work" class="container">
   <div class="row">
     <h1 class="text-center">My Work</h1>
-    <div class="col-xs-12 col-md-10 col-md-offset-1 work-individual">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
       <%= image_tag "Voyagr-logo", height: 25.5, width: 107.5, class: "work-image-center" %>
       <p id="line-height">Since late <%= link_to "2016", "http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide", target: "_blank", class: "voyagr" %> worldwide mobile and tablet internet usage has exceeded desktop usage. This means that websites designed without mobile and tablet users in mind will be excluding over half of their potential audience. As such, I wanted to work on a project which would provide for this preponderant group first, in order to develop my mobile-first skillset. Voyagr is a facebook chatbot and associated rails app developed in just two weeks to showcase skills acquired at Le Wagon's coding bootcamp. It provides tailored travel inspiration based on the answers a user gives to a facebook quiz, alongside a couple of other features. </p>
     </div>
-    <div class="col-xs-12 col-md-10 col-md-offset-1 work-individual">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
       <%= image_tag "Le Wagon", height: 45, width: 107.5, class: "work-image-center" %>
       <p id="line-height">I am currently working as a teaching assistant at Le Wagon London. We are proud to be ranked as the #1 coding bootcamp in the world according to <%= link_to "SwitchUp", "https://www.switchup.org/research/best-coding-bootcamps", target: "_blank", class: "voyagr" %> and <%= link_to "Coursereport", "https://www.coursereport.com/schools/le-wagon", target: "_blank", class: "voyagr" %>. We offer an intensive nine week program which teaches Ruby/Rails, Javascript/JQuery, HTML/CSS, SQL and a whole host of other tools. To see my current work on React and Redux check out my github profile. </p>
     </div>
@@ -82,7 +86,7 @@
 
 <div id="contact" class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-10 col-md-offset-1 text-center contact-info contact-links">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center contact-info contact-links">
       <h1>Interested?</h1>
       <p id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
       <%= link_to "", "https://www.linkedin.com/in/ben-fanning-28523315b/", target: "_blank", class: "links fab fa-linkedin" %>
@@ -94,20 +98,40 @@
 </div>
 
 <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center">Résumé</h4>
+        <h4 class="modal-title">Modal Header</h4>
       </div>
       <div class="modal-body">
-        <%= image_tag "BenFanning", height: 1223, width:865, id: "resume" %>
+        <p>Some text in the modal.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
 </div>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+  var app = document.getElementById('app');
+
+  var typewriter = new Typewriter(app, {
+      loop: true
+  });
+
+typewriter.typeString('Full Stack Developer')
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('Front End Developer')
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('Snow Lover')
+    .pauseFor(500)
+    .start();
+</script>
