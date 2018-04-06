@@ -3,17 +3,18 @@
     <div class="navbar-flex">
       <div class="navbar-wagon-right">
         <ul>
-        <a id="navbar-text" href="#about-me" class="navbar-wagon-item navbar-wagon-link">About Me</a>
-        <a id="navbar-text" href="#my-skills" class="navbar-wagon-item navbar-wagon-link">My Skills</a>
-        <a id="navbar-text" href="#previous-work" class="navbar-wagon-item navbar-wagon-link">My Work</a>
-        <a id="navbar-text" href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact Me</a>
+        <a id="navbar-text" href="#about-me" class="navbar-wagon-item navbar-wagon-link">About</a>
+        <a id="navbar-text" href="#my-skills" class="navbar-wagon-item navbar-wagon-link">Skills</a>
+        <a id="navbar-text" href="#previous-work" class="navbar-wagon-item navbar-wagon-link">Work</a>
+        <a id="navbar-text" href="#where" class="navbar-wagon-item navbar-wagon-link">Location</a>
+        <a id="navbar-text" href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact</a>
         </ul>
       </div>
       <hr class="top">
     </div>
   </div>
   <div class="banner-content">
-    <h2 id="banner-title">Ben Fanning</h2>
+    <h3 id="banner-title">Ben Fanning</h3>
     <p id="app"></p>
   </div>
 </div>
@@ -68,34 +69,56 @@
 <div id="my-skills" class="colored-banner">
   <div class="container">
     <div class="row">
-      <h2 class="text-center">My Skills</h2>
+      <h2 id="skill-title" class="text-center">My Skills</h2>
     </div>
-    <div id="white-font" class="skill-flex">
-      <div class="gauge">
-        <canvas width="200" height="200" id="UI/UX"></canvas>
-        <div class="text-center" id="gauge-label" style="font-size: 15px;">UI/UX</div>
+    <div id="white-font">
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="UI/UX"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">UI/UX</div>
+        </div>
       </div>
-      <div class="gauge">
-        <canvas width="200" height="200" id="Ruby"></canvas>
-        <div class="text-center" id="gauge-label" style="font-size: 15px;">Ruby</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="Ruby"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">Ruby</div>
+        </div>
       </div>
-      <div class="gauge">
-        <canvas width="200" height="200" id="Javascript"></canvas>
-        <div class="text-center" id="gauge-label" style="font-size: 15px;">Javascript</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="Javascript"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">Javascript</div>
+        </div>
       </div>
-    </div>
-    <div id="white-font" class="skill-flex">
-      <div class="gauge">
-        <canvas width="200" height="200" id="Rails"></canvas>
-        <div class="text-center" id="gauge-label" style="font-size: 15px;">Rails</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="Rails"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">Rails</div>
+        </div>
       </div>
-      <div class="gauge">
-        <canvas width="200" height="200" id="HTML/CSS"></canvas>
-        <div class="text-center" id="gauge-label" style="font-size: 15px;">HTML/CSS</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="HTML/CSS"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">HTML/CSS</div>
+        </div>
       </div>
-      <div class="gauge">
-        <canvas width="200" height="200" id="React/Redux"></canvas>
-        <div class="text-center" id="gauge-label" style="font-size: 15px;">React/Redux</div>
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="React/Redux"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">React/Redux</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="Puns"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">Bad Puns</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
+        <div class="gauge">
+          <canvas width="200" height="200" id="Send"></canvas>
+          <div id="gauge-label" style="font-size: 15px;">Getting Sendy</div>
+        </div>
       </div>
     </div>
   </div>
@@ -116,12 +139,22 @@
     </div>
   </div>
 </div>
+<div id="where" class="map-banner">
+  <h2>Where to find me</h2>
+  <br>
+  <br>
+  <div
+    id="map"
+    style="width: 100%;
+    height: 600px;"
+  ></div>
+</div>
 
-<div id="contact" class="colored-banner">
+<div id="contact" class="white-banner">
   <div class="container">
     <div class="row">
-      <div id="white-font" class="col-xs-12 col-sm-10 col-sm-offset-1 text-center contact-info contact-links">
-        <h2>Interested?</h2>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center contact-info contact-links">
+        <h1>Interested?</h1>
         <p class="light-font" id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
       </div>
     </div>
@@ -129,23 +162,29 @@
 </div>
 
 <div class="container">
-  <div class="link-holder">
-    <%= link_to "", "https://www.linkedin.com/in/ben-fanning-28523315b/", target: "_blank", class: "links fab fa-linkedin" %>
-    <%= link_to "", "https://github.com/fanninggg", target: "_blank", class: "links fab fa-github" %>
-    <%= link_to "", "https://www.facebook.com/fanninggg", target: "_blank", class: "links fab fa-facebook-f" %>
-    <%= link_to "", "mailto:ben@voyagr.co.uk", class: "links far fa-envelope" %>
+  <div class="row">
+    <div class="link-holder">
+      <div class="col-xs-6 col-sm-3">
+        <%= link_to "", "https://www.linkedin.com/in/ben-fanning-28523315b/", target: "_blank", class: "links fab fa-linkedin" %>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <%= link_to "", "https://github.com/fanninggg", target: "_blank", class: "links fab fa-github" %>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <%= link_to "", "https://www.facebook.com/fanninggg", target: "_blank", class: "links fab fa-facebook-f" %>
+      </div>
+      <div class="col-xs-6 col-sm-3">
+        <%= link_to "", "mailto:ben@voyagr.co.uk", class: "links far fa-envelope" %>
+      </div>
+    </div>
   </div>
 </div>
 
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
+      <div class="modal-body cv-holder">
+        <%= image_tag "BenFanning" %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -202,23 +241,6 @@ var opts = {
   gauge.set(90); // set actual value
 </script>
 <script>
-var opts = {
-  angle: -0.30, // The span of the gauge arc
-  lineWidth: 0.07, // The line thickness
-  radiusScale: 1, // Relative radius
-  pointer: {
-    length: 0, // // Relative to gauge radius
-    strokeWidth: 0, // The thickness
-  },
-  limitMax: false,     // If false, max value increases automatically if value > maxValue
-  limitMin: false,     // If true, the min value of the gauge will be fixed
-  colorStart: '#6FADCF',   // Colors
-  colorStop: '#FFFFFF',    // just experiment with them
-  strokeColor: '#225277',  // to see which ones work best for you
-  generateGradient: true,
-  highDpiSupport: true,     // High resolution support
-
-  };
   var target = document.getElementById('Ruby'); // your canvas element
   var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
   gauge.maxValue = 100; // set max gauge value
@@ -227,23 +249,6 @@ var opts = {
   gauge.set(70); // set actual value
 </script>
 <script>
-var opts = {
-  angle: -0.30, // The span of the gauge arc
-  lineWidth: 0.07, // The line thickness
-  radiusScale: 1, // Relative radius
-  pointer: {
-    length: 0, // // Relative to gauge radius
-    strokeWidth: 0, // The thickness
-  },
-  limitMax: false,     // If false, max value increases automatically if value > maxValue
-  limitMin: false,     // If true, the min value of the gauge will be fixed
-  colorStart: '#6FADCF',   // Colors
-  colorStop: '#FFFFFF',    // just experiment with them
-  strokeColor: '#225277',  // to see which ones work best for you
-  generateGradient: true,
-  highDpiSupport: true,     // High resolution support
-
-  };
   var target = document.getElementById('Javascript'); // your canvas element
   var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
   gauge.maxValue = 100; // set max gauge value
@@ -252,23 +257,6 @@ var opts = {
   gauge.set(50); // set actual value
 </script>
 <script>
-var opts = {
-  angle: -0.30, // The span of the gauge arc
-  lineWidth: 0.07, // The line thickness
-  radiusScale: 1, // Relative radius
-  pointer: {
-    length: 0, // // Relative to gauge radius
-    strokeWidth: 0, // The thickness
-  },
-  limitMax: false,     // If false, max value increases automatically if value > maxValue
-  limitMin: false,     // If true, the min value of the gauge will be fixed
-  colorStart: '#6FADCF',   // Colors
-  colorStop: '#FFFFFF',    // just experiment with them
-  strokeColor: '#225277',  // to see which ones work best for you
-  generateGradient: true,
-  highDpiSupport: true,     // High resolution support
-
-  };
   var target = document.getElementById('Rails'); // your canvas element
   var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
   gauge.maxValue = 100; // set max gauge value
@@ -277,23 +265,6 @@ var opts = {
   gauge.set(70); // set actual value
 </script>
 <script>
-var opts = {
-  angle: -0.30, // The span of the gauge arc
-  lineWidth: 0.07, // The line thickness
-  radiusScale: 1, // Relative radius
-  pointer: {
-    length: 0, // // Relative to gauge radius
-    strokeWidth: 0, // The thickness
-  },
-  limitMax: false,     // If false, max value increases automatically if value > maxValue
-  limitMin: false,     // If true, the min value of the gauge will be fixed
-  colorStart: '#6FADCF',   // Colors
-  colorStop: '#FFFFFF',    // just experiment with them
-  strokeColor: '#225277',  // to see which ones work best for you
-  generateGradient: true,
-  highDpiSupport: true,     // High resolution support
-
-  };
   var target = document.getElementById('HTML/CSS'); // your canvas element
   var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
   gauge.maxValue = 100; // set max gauge value
@@ -302,27 +273,69 @@ var opts = {
   gauge.set(90); // set actual value
 </script>
 <script>
-var opts = {
-  angle: -0.30, // The span of the gauge arc
-  lineWidth: 0.07, // The line thickness
-  radiusScale: 1, // Relative radius
-  pointer: {
-    length: 0, // // Relative to gauge radius
-    strokeWidth: 0, // The thickness
-  },
-  limitMax: false,     // If false, max value increases automatically if value > maxValue
-  limitMin: false,     // If true, the min value of the gauge will be fixed
-  colorStart: '#6FADCF',   // Colors
-  colorStop: '#FFFFFF',    // just experiment with them
-  strokeColor: '#225277',  // to see which ones work best for you
-  generateGradient: true,
-  highDpiSupport: true,     // High resolution support
-
-  };
   var target = document.getElementById('React/Redux'); // your canvas element
   var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
   gauge.maxValue = 100; // set max gauge value
   gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
   gauge.animationSpeed = 100; // set animation speed (32 is default value)
   gauge.set(20); // set actual value
+</script>
+<script>
+  var target = document.getElementById('Puns'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(80); // set actual value
+</script>
+<script>
+  var target = document.getElementById('Send'); // your canvas element
+  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+  gauge.maxValue = 100; // set max gauge value
+  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+  gauge.animationSpeed = 100; // set animation speed (32 is default value)
+  gauge.set(100); // set actual value
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var element_position = $('#my-skills').offset().top;
+  var screen_height = $(window).height();
+  var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function
+  var activation_point = element_position - (screen_height * activation_offset);
+  var max_scroll_height = $('body').height() - screen_height - 5;//-5 for a little bit of buffer
+
+  //Does something when user scrolls to it OR
+  //Does it when user has reached the bottom of the page and hasn't triggered the function yet
+  $(window).on('scroll', function() {
+      var y_scroll_pos = window.pageYOffset;
+
+      var element_in_view = y_scroll_pos > activation_point;
+      var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
+
+      if(element_in_view || has_reached_bottom_of_page) {
+          //Do something
+      }
+  });
 </script>
