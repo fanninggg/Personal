@@ -22,7 +22,7 @@
     <%= yield %>
     <%= javascript_pack_tag "application" %>
     <%= javascript_include_tag "application" %>
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['AIzaSyAxb0TFoX1RlY4nSRIYKKIf9RlWJqLuf1Y']}" %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV[GOOGLE_API_BROWSER_KEY]}" %>
     <%= javascript_pack_tag "map" %>
   </body>
 </html>
