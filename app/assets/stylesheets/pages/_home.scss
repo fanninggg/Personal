@@ -256,18 +256,49 @@ ul {
 .skill-holder {
   margin-bottom: 150px;
 }
-.gauge {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#gauge-label {
-  margin-top: -100px;
-}
+
 .cv-holder {
   display: flex;
   justify-content: space-around;
 }
+.skill-line {
+  display: flex;
+  align-items: center;
+}
+.skill-chart {
+  display: flex;
+}
+.skills-para {
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+.skill-names {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  height: 350px;
+  justify-content: space-around;
+}
+.skill-score {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: space-between;
+}
+.skill-score-line {
+  display: flex;
+}
+#skill {
+  margin: 0;
+}
+#ski-lift {
+  margin-left: 20px;
+}
+#ski-lift-half {
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 600px) {
   .top {
     width: 80%;
@@ -298,13 +329,31 @@ ul {
   .about-text-right {
     border: none;
     width: 100%;
+    text-align: center;
   }
   .about-text-left {
     width: 100%;
     border: none;
+    text-align: center
+  }
+  .skill-names {
+    justify-content: space-between;
+  }
+  .skills-para {
+    height: 450px;
   }
   #resume {
     width: 270px;
     height: 382px;
+  }
+  #ski-lift {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  #ski-lift-half {
+    margin-left: 10px;
+    width: 12.5px;
+    height: 25px;
   }
 }

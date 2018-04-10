@@ -67,57 +67,69 @@
 </div>
 
 <div id="my-skills" class="colored-banner">
-  <div class="container">
+  <div id="white-font" class="container">
+    <h2>My Skills</h2>
     <div class="row">
-      <h2 id="skill-title" class="text-center">My Skills</h2>
-    </div>
-    <div id="white-font">
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="UI/UX"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">UI/UX</div>
+      <div class="col-md-6 light-font">
+        <div class="skills-para">
+          <p>Here is an exceptionally informative infographic which I have created to give you a little flavour of some of the skills I pride myself on.
+          <br>
+          <br>
+          In leiu of a legitimate unit of skill I'm using ski lifts to denote ability, one ski lift meaning that I am on the proverbial beginner slope, not even ready for a green run and five meaning I'm crushing those double black diamonds, a real expert.
+          <br>
+          <br>
+          While not present on the chart I am also learning React and Redux in order to broaden my technical toolkit and also further familiarise myself with Javascript.</p>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="Ruby"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">Ruby</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="Javascript"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">Javascript</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="Rails"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">Rails</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="HTML/CSS"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">HTML/CSS</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="React/Redux"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">React/Redux</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="Puns"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">Bad Puns</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 skill-holder">
-        <div class="gauge">
-          <canvas width="200" height="200" id="Send"></canvas>
-          <div id="gauge-label" style="font-size: 15px;">Getting Sendy</div>
+      <div class="col-md-6 ">
+        <div class="skill-chart">
+          <div class="skill-names light-font"">
+            <p id="skill">HTML/CSS</p>
+            <p id="skill">UI/UX</p>
+            <p id="skill">Ruby</p>
+            <p id="skill">Rails</p>
+            <p id="skill">Javascript</p>
+            <p id="skill">Wit &amp Charm</p>
+          </div>
+          <div class="skill-score">
+            <div class="skill-score-line">
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+            </div>
+            <div class="skill-score-line">
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilifthalf", width: 25, height: 50, id: "ski-lift-half"%>
+            </div>
+            <div class="skill-score-line">
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilifthalf", width: 25, height: 50, id: "ski-lift-half"%>
+            </div>
+            <div class="skill-score-line">
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+            </div>
+            <div class="skill-score-line">
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+            </div>
+            <div class="skill-score-line">
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -155,7 +167,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center contact-info contact-links">
         <h1>Interested?</h1>
-        <p class="light-font" id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
+        <p id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
       </div>
     </div>
   </div>
@@ -214,105 +226,3 @@ typewriter.typeString('Full Stack Developer')
     .pauseFor(500)
     .start();
 </script>
-
-<script>
-var opts = {
-  angle: -0.30, // The span of the gauge arc
-  lineWidth: 0.07, // The line thickness
-  radiusScale: 1, // Relative radius
-  pointer: {
-    length: 0, // // Relative to gauge radius
-    strokeWidth: 0, // The thickness
-  },
-  limitMax: false,     // If false, max value increases automatically if value > maxValue
-  limitMin: false,     // If true, the min value of the gauge will be fixed
-  colorStart: '#6FADCF',   // Colors
-  colorStop: '#FFFFFF',    // just experiment with them
-  strokeColor: '#225277',  // to see which ones work best for you
-  generateGradient: true,
-  highDpiSupport: true,     // High resolution support
-
-  };
-  var target = document.getElementById('UI/UX'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(90); // set actual value
-</script>
-<script>
-  var target = document.getElementById('Ruby'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(70); // set actual value
-</script>
-<script>
-  var target = document.getElementById('Javascript'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(50); // set actual value
-</script>
-<script>
-  var target = document.getElementById('Rails'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(70); // set actual value
-</script>
-<script>
-  var target = document.getElementById('HTML/CSS'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(90); // set actual value
-</script>
-<script>
-  var target = document.getElementById('React/Redux'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(20); // set actual value
-</script>
-<script>
-  var target = document.getElementById('Puns'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(80); // set actual value
-</script>
-<script>
-  var target = document.getElementById('Send'); // your canvas element
-  var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
-  gauge.maxValue = 100; // set max gauge value
-  gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
-  gauge.animationSpeed = 100; // set animation speed (32 is default value)
-  gauge.set(100); // set actual value
-</script>
-<!-- <script>
-  var element_position = $('#my-skills').offset().top;
-  var screen_height = $(window).height();
-  var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function
-  var activation_point = element_position - (screen_height * activation_offset);
-  var max_scroll_height = $('body').height() - screen_height - 5;//-5 for a little bit of buffer
-
-  //Does something when user scrolls to it OR
-  //Does it when user has reached the bottom of the page and hasn't triggered the function yet
-  $(window).on('scroll', function() {
-      var y_scroll_pos = window.pageYOffset;
-
-      var element_in_view = y_scroll_pos > activation_point;
-      var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
-
-      if(element_in_view || has_reached_bottom_of_page) {
-          //Do something
-      }
-  });
-</script> -->
