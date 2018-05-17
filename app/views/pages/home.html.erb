@@ -2,12 +2,12 @@
   <div class="navbar-wagon">
     <div class="navbar-flex">
       <div class="navbar-wagon-right">
-        <ul>
-        <a id="navbar-text" href="#about-me" class="navbar-wagon-item navbar-wagon-link">About</a>
-        <a id="navbar-text" href="#my-skills" class="navbar-wagon-item navbar-wagon-link">Skills</a>
-        <a id="navbar-text" href="#previous-work" class="navbar-wagon-item navbar-wagon-link">Work</a>
-        <a id="navbar-text" href="#where" class="navbar-wagon-item navbar-wagon-link">Location</a>
-        <a id="navbar-text" href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+        <ul class="page-scroll smooth-scroll">
+          <a id="navbar-text" href="#about-me" class="navbar-wagon-item navbar-wagon-link">About</a>
+          <a id="navbar-text" href="#my-skills" class="navbar-wagon-item navbar-wagon-link">Skills</a>
+          <a id="navbar-text" href="#previous-work" class="navbar-wagon-item navbar-wagon-link">Work</a>
+          <a id="navbar-text" href="#where" class="navbar-wagon-item navbar-wagon-link">Location</a>
+          <a id="navbar-text" href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact</a>
         </ul>
       </div>
       <hr class="top">
@@ -63,6 +63,9 @@
         <br>
         <br>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Résumé</button>
+        <a href="../../assets/BenFanning.pdf" download="BenFanning">
+          <button type="button" class="btn btn-success btn-lg dwn-btn">Download</button>
+        </a>
       </div>
     </div>
   </div>
@@ -228,3 +231,16 @@ typewriter.typeString('Full Stack Developer')
     .pauseFor(500)
     .start();
 </script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
