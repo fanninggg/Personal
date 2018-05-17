@@ -300,7 +300,6 @@ ul {
 #ski-lift-half {
   margin-left: 20px;
 }
-
 @media only screen and (max-width: 600px) {
   .top {
     width: 80%;
@@ -357,5 +356,8 @@ ul {
     margin-left: 10px;
     width: 12.5px;
     height: 25px;
+  }
+  #resume-btn{
+    margin-bottom: 10px;
   }
 }
