@@ -52,7 +52,7 @@
 
     <div class="row no-gutters row-spacer flex-test">
       <div class="about-text-left">
-        <p id="line-height">Following the bootcamp I was asked to return as a teaching assistant for the next batch of students, this has allowed me to consolidate my existing knowledge as well as providing me with the opportunity of debugging code written in a variety of different styles.</p>
+        <p id="line-height">Following the bootcamp I was asked to return as a teaching assistant for the next batch of students, this has allowed me to consolidate my existing knowledge as well as providing me with the opportunity of debugging code written in a variety of different styles. Since then I have graduated to teaching on the course. Alongside these responsibilities I have also taken on a mobile development contract using React Native and Ruby on Rails.</p>
       </div>
       <div data-aos="fade-right" data-aos-easing="ease-out-cubic"
      data-aos-duration="1000" class="text-center"><%= image_tag "Ben", width: 200, height: 200, id: "avatar" %></div>
@@ -63,7 +63,7 @@
         <br>
         <br>
         <button type="button" class="btn btn-primary btn-lg" id="resume-btn" data-toggle="modal" data-target="#myModal">Résumé</button>
-        <a href="../../assets/BenFanning.pdf" download="BenFanning">
+        <a href="../../assets/benFanning.pdf" download="BenFanning">
           <button type="button" class="btn btn-success btn-lg dwn-btn">Download</button>
         </a>
       </div>
@@ -80,10 +80,9 @@
           <p>Here is an exceptionally informative infographic which I have created to give you a little flavour of some of the skills I pride myself on.
           <br>
           <br>
+          <br>
           In leiu of a legitimate unit of skill I'm using ski lifts to denote ability, one ski lift meaning that I am on the proverbial beginner slope and five meaning I'm crushing those double black diamonds, a real expert.
-          <br>
-          <br>
-          While not present on the chart I am also learning React and Redux in order to broaden my technical toolkit and also further familiarise myself with Javascript.</p>
+          </p>
         </div>
       </div>
       <div class="col-md-6 ">
@@ -93,7 +92,7 @@
             <p id="skill">UI/UX</p>
             <p id="skill">Ruby</p>
             <p id="skill">Rails</p>
-            <p id="skill">Javascript</p>
+            <p id="skill">React Native</p>
             <p id="skill">Wit &amp Charm</p>
           </div>
           <div class="skill-score">
@@ -114,15 +113,16 @@
               <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
               <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
               <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+            </div>
+            <div class="skill-score-line">
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
+              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
               <%= image_tag "skilifthalf", width: 25, height: 50, id: "ski-lift-half"%>
             </div>
             <div class="skill-score-line">
               <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
-              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
-              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
-              <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
-            </div>
-            <div class="skill-score-line">
               <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
               <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
               <%= image_tag "skilift", width: 50, height: 50, id: "ski-lift"%>
@@ -146,12 +146,16 @@
     <div class="row no-gutters">
       <h1 class="text-center">My Work</h1>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
+        <%= image_tag "DTP-text-oneline", height: 45, width: 107.5, class: "work-image-center" %>
+        <p id="line-height">The player availability solution for today’s amateur sports community. Down To Play is a React Native mobile application which has been under development since August of 2018 with an estimated release in late Novemeber of the same year. My first foray into the world of mobile development, DTP is being developed by a team of three young developers for Freehouse Ideas. The key idea by DTP is to streamline the availability process in the amateur sports world, starting with football in the London area and hoping to branch out to multiple sports across the UK. DTP utilises a rails API backened coupled with a React Native frontend for a seamless user experience.</p>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
         <%= image_tag "Voyagr-logo", height: 25.5, width: 107.5, class: "work-image-center" %>
         <p id="line-height">Since late <%= link_to "2016", "http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide", target: "_blank", class: "voyagr" %> worldwide mobile and tablet internet usage has exceeded desktop usage. This means that websites designed without mobile and tablet users in mind will be excluding over half of their potential audience. As such, I wanted to work on a project which would provide for this preponderant group first, in order to develop my mobile-first skillset. Voyagr is a facebook chatbot and associated rails app developed in just two weeks to showcase skills acquired at Le Wagon's coding bootcamp. It provides tailored travel inspiration based on the answers a user gives to a facebook quiz, alongside a couple of other features. </p>
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 work-individual">
         <%= image_tag "Le Wagon", height: 45, width: 107.5, class: "work-image-center" %>
-        <p id="line-height">I am currently working as a teaching assistant at Le Wagon London. We are proud to be ranked as the #1 coding bootcamp in the world according to <%= link_to "SwitchUp", "https://www.switchup.org/research/best-coding-bootcamps", target: "_blank", class: "voyagr" %> and <%= link_to "Coursereport", "https://www.coursereport.com/schools/le-wagon", target: "_blank", class: "voyagr" %>. We offer an intensive nine week program which teaches Ruby/Rails, Javascript/JQuery, HTML/CSS, SQL and a whole host of other tools. To see my current work on React and Redux check out my github profile. </p>
+        <p id="line-height">I am currently working as a teacher at Le Wagon London. We are proud to be ranked as the #1 coding bootcamp in the world according to <%= link_to "SwitchUp", "https://www.switchup.org/research/best-coding-bootcamps", target: "_blank", class: "voyagr" %> and <%= link_to "Coursereport", "https://www.coursereport.com/schools/le-wagon", target: "_blank", class: "voyagr" %>. We offer an intensive nine week program which teaches Ruby/Rails, Javascript/JQuery, HTML/CSS, SQL and a whole host of other tools. </p>
       </div>
     </div>
   </div>
@@ -172,7 +176,7 @@
     <div class="row no-gutters">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center contact-info contact-links">
         <h1>Interested?</h1>
-        <p id="line-height">I am currently available for freelance full-stack and front-end work, if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
+        <p id="line-height">I am currently under contract for the next two months, but if you like what you've seen here and would like to get into contact with me just hit on one of the links below to contact me via LinkedIn, Github, Facebook or Email. If you are interested in having me build a website for you then e-mail is the best way to get in touch. Cheers! </p>
       </div>
     </div>
   </div>
@@ -201,7 +205,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body cv-holder">
-        <%= image_tag "BenFanning", id: "resume" %>
+        <%= image_tag "benFanning", id: "resume" %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

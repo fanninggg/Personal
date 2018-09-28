@@ -1,6 +1,6 @@
 import GMaps from 'gmaps/gmaps.js';
 
-var myLatlng = new google.maps.LatLng(51.506953,-0.105808);
+var myLatlng = new google.maps.LatLng(51.532624,-0.076824);
 var styles = [
   {
         "featureType": "all",
@@ -221,7 +221,7 @@ var styles = [
   ];
 
 var mapOptions = {
-  zoom: 4,
+  zoom: 5,
   center: myLatlng,
   styles: styles
 }
