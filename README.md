@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Personal Website for Ben Fanning. Designed as a rails app to allow for potential expansion. Check out https://www.linkedin.com/in/ben-fanning/ for more info.
