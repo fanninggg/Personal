@@ -14,10 +14,10 @@ gem 'font-awesome-sass', '~> 4.7'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
-gem 'webpacker'
 gem 'bootsnap', require: false
 gem 'bootstrap'
 gem 'geocoder'
+gem 'webpacker', '~> 3.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
